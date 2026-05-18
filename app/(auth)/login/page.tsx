@@ -63,7 +63,7 @@ export default function LoginPage() {
       return;
     }
 
-    router.push("/play");
+    router.push("/");
     router.refresh();
   }
 
