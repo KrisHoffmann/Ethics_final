@@ -104,7 +104,7 @@ export function QuizCard({ questions, userId, initialBestStreak }: QuizCardProps
         "hover:border-primary/40 hover:bg-white active:scale-[0.98] cursor-pointer";
     }
 
-    if (optionId === current.correct_id) {
+    if (optionId === current!.correct_id) {
       return base + "bg-[#DCFCE7] border-[#16A34A] text-[#16A34A] cursor-not-allowed";
     }
     if (optionId === selectedId && answerState === "incorrect") {
