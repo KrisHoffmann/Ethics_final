@@ -91,7 +91,7 @@ export default function RegisterPage() {
     }
 
     setLoading(false);
-    router.push("/");
+    router.push("/play");
     router.refresh();
   }
 
