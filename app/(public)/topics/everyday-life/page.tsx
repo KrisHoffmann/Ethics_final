@@ -76,6 +76,19 @@ export default function EverydayLifePage() {
           Ready to test what you know?
         </p>
       </section>
+
+      <section aria-labelledby="daily-sources" className="mt-8 pt-6 border-t border-border">
+        <h2 id="daily-sources" className="font-heading font-semibold text-xl text-foreground mb-3">
+          Sources
+        </h2>
+        <ol className="font-sans text-sm text-muted-foreground space-y-2 list-decimal list-inside">
+          <li>Pariser, E. *The Filter Bubble: What the Internet Is Hiding from You.* Penguin Press, 2011. <a href="https://www.penguinrandomhouse.com/books/310664/the-filter-bubble-by-eli-pariser/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.penguinrandomhouse.com/books/310664/the-filter-bubble-by-eli-pariser/</a></li>
+          <li>Center for Humane Technology. *Ledger of Harms.* <a href="https://ledger.humanetech.com/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://ledger.humanetech.com/</a></li>
+          <li>Macfarlane, J. *Your Navigation App Is Making Traffic Unmanageable.* IEEE Spectrum, 2019. <a href="https://spectrum.ieee.org/your-navigation-app-is-making-traffic-unmanageable" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://spectrum.ieee.org/your-navigation-app-is-making-traffic-unmanageable</a></li>
+          <li>Day, M., Turner, G. & Drozdiak, N. *Amazon Workers Are Listening to What You Tell Alexa.* Bloomberg, 2019. <a href="https://www.bloomberg.com/news/articles/2019-04-10/is-anyone-listening-to-you-on-alexa-a-global-team-reviews-audio" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.bloomberg.com/news/articles/2019-04-10/is-anyone-listening-to-you-on-alexa-a-global-team-reviews-audio</a></li>
+          <li>US Federal Trade Commission. *Electronic Toy Maker VTech Settles FTC Allegations.* 2018. <a href="https://www.ftc.gov/news-events/news/press-releases/2018/01/electronic-toy-maker-vtech-settles-ftc-allegations-it-violated-childrens-privacy-law-ftc-act" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.ftc.gov/news-events/news/press-releases/2018/01/electronic-toy-maker-vtech-settles-ftc-allegations-it-violated-childrens-privacy-law-ftc-act</a></li>
+        </ol>
+      </section>
     </TopicPageLayout>
   );
 }

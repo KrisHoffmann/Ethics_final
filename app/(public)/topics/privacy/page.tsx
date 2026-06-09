@@ -100,6 +100,20 @@ export default function PrivacyPage() {
           Ready to test what you know?
         </p>
       </section>
+
+      <section aria-labelledby="privacy-sources" className="mt-8 pt-6 border-t border-border">
+        <h2 id="privacy-sources" className="font-heading font-semibold text-xl text-foreground mb-3">
+          Sources
+        </h2>
+        <ol className="font-sans text-sm text-muted-foreground space-y-2 list-decimal list-inside">
+          <li>European Parliament and Council. *General Data Protection Regulation (GDPR), Article 5(1)(c): data minimisation.* 2016. <a href="https://gdpr-info.eu/art-5-gdpr/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://gdpr-info.eu/art-5-gdpr/</a></li>
+          <li>European Parliament and Council. *GDPR, Article 22: automated individual decision-making.* 2016. <a href="https://gdpr-info.eu/art-22-gdpr/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://gdpr-info.eu/art-22-gdpr/</a></li>
+          <li>Sweeney, L. *Simple Demographics Often Identify People Uniquely.* Carnegie Mellon University, 2000. <a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://dataprivacylab.org/projects/identifiability/paper1.pdf</a></li>
+          <li>Wood, A. et al. *Differential Privacy: A Primer for a Non-Technical Audience.* Vanderbilt Journal of Entertainment & Technology Law, 2018. <a href="https://privacytools.seas.harvard.edu/files/privacytools/files/pedagogical-document-dp_new.pdf" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://privacytools.seas.harvard.edu/files/privacytools/files/pedagogical-document-dp_new.pdf</a></li>
+          <li>Google AI. *Federated Learning: Collaborative Machine Learning without Centralized Training Data.* 2017. <a href="https://research.google/blog/federated-learning-collaborative-machine-learning-without-centralized-training-data/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://research.google/blog/federated-learning-collaborative-machine-learning-without-centralized-training-data/</a></li>
+          <li>European Data Protection Board. *Guidelines 03/2022 on deceptive design patterns in social media platform interfaces.* 2022. <a href="https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-032022-deceptive-design-patterns-social-media_en" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-032022-deceptive-design-patterns-social-media_en</a></li>
+        </ol>
+      </section>
     </TopicPageLayout>
   );
 }

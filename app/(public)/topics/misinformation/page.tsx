@@ -85,6 +85,22 @@ export default function MisinformationPage() {
           Ready to test what you know?
         </p>
       </section>
+
+      <section aria-labelledby="misinfo-sources" className="mt-8 pt-6 border-t border-border">
+        <h2 id="misinfo-sources" className="font-heading font-semibold text-xl text-foreground mb-3">
+          Sources
+        </h2>
+        <ol className="font-sans text-sm text-muted-foreground space-y-2 list-decimal list-inside">
+          <li>Chesney, B. & Citron, D. *Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security.* California Law Review, 2019. <a href="https://www.californialawreview.org/print/deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.californialawreview.org/print/deep-fakes-a-looming-challenge-for-privacy-democracy-and-national-security</a></li>
+          <li>Coalition for Content Provenance and Authenticity (C2PA). *Overview and Technical Specifications.* <a href="https://c2pa.org/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://c2pa.org/</a></li>
+          <li>Ji, Z. et al. *Survey of Hallucination in Natural Language Generation.* ACM Computing Surveys, 2023. <a href="https://dl.acm.org/doi/10.1145/3571730" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://dl.acm.org/doi/10.1145/3571730</a></li>
+          <li>Vosoughi, S., Roy, D. & Aral, S. *The spread of true and false news online.* Science, 2018. <a href="https://www.science.org/doi/10.1126/science.aap9559" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.science.org/doi/10.1126/science.aap9559</a></li>
+          <li>Brennen, J. S. et al. *Types, Sources, and Claims of COVID-19 Misinformation.* Reuters Institute, University of Oxford, 2020. <a href="https://reutersinstitute.politics.ox.ac.uk/types-sources-and-claims-covid-19-misinformation" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://reutersinstitute.politics.ox.ac.uk/types-sources-and-claims-covid-19-misinformation</a></li>
+          <li>Bengani, P. *Hundreds of \"pink slime\" local news outlets are distributing algorithmic stories.* Columbia Journalism Review / Tow Center, 2019. <a href="https://www.cjr.org/tow_center_reports/hundreds-of-pink-slime-local-news-outlets-are-distributing-algorithmic-stories-conservative-talking-points.php" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.cjr.org/tow_center_reports/hundreds-of-pink-slime-local-news-outlets-are-distributing-algorithmic-stories-conservative-talking-points.php</a></li>
+          <li>Wineburg, S. & McGrew, S. *Lateral Reading and the Nature of Expertise.* Teachers College Record, 2019. <a href="https://journals.sagepub.com/doi/10.1177/016146811912101102" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://journals.sagepub.com/doi/10.1177/016146811912101102</a></li>
+          <li>Roozenbeek, J., van der Linden, S. et al. *Psychological inoculation improves resilience against misinformation on social media.* Science Advances, 2022. <a href="https://www.science.org/doi/10.1126/sciadv.abo6254" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.science.org/doi/10.1126/sciadv.abo6254</a></li>
+        </ol>
+      </section>
     </TopicPageLayout>
   );
 }

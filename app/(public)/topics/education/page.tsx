@@ -88,6 +88,20 @@ export default function EducationPage() {
           Ready to test what you know?
         </p>
       </section>
+
+      <section aria-labelledby="edu-sources" className="mt-8 pt-6 border-t border-border">
+        <h2 id="edu-sources" className="font-heading font-semibold text-xl text-foreground mb-3">
+          Sources
+        </h2>
+        <ol className="font-sans text-sm text-muted-foreground space-y-2 list-decimal list-inside">
+          <li>Ji, Z. et al. *Survey of Hallucination in Natural Language Generation.* ACM Computing Surveys, 2023. <a href="https://dl.acm.org/doi/10.1145/3571730" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://dl.acm.org/doi/10.1145/3571730</a></li>
+          <li>Risko, E. F. & Gilbert, S. J. *Cognitive Offloading.* Trends in Cognitive Sciences, 2016. <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(16)30113-7" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(16)30113-7</a></li>
+          <li>Liang, W. et al. *GPT detectors are biased against non-native English writers.* Patterns, 2023. <a href="https://www.cell.com/patterns/fulltext/S2666-3899(23)00130-7" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.cell.com/patterns/fulltext/S2666-3899(23)00130-7</a></li>
+          <li>OpenAI. *New AI classifier for indicating AI-written text* (update noting withdrawal). 2023. <a href="https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/</a></li>
+          <li>Manheim, D. & Garrabrant, S. *Categorizing Variants of Goodhart's Law.* 2018. <a href="https://arxiv.org/abs/1803.04585" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/1803.04585</a></li>
+          <li>OECD. *Bridging Digital Divides in Schools.* 2023. <a href="https://www.oecd.org/en/publications/oecd-digital-education-outlook-2023_c74f03de-en.html" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.oecd.org/en/publications/oecd-digital-education-outlook-2023_c74f03de-en.html</a></li>
+        </ol>
+      </section>
     </TopicPageLayout>
   );
 }

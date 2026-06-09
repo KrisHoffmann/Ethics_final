@@ -82,6 +82,20 @@ export default function JobMarketPage() {
           Ready to test what you know?
         </p>
       </section>
+
+      <section aria-labelledby="jobs-sources" className="mt-8 pt-6 border-t border-border">
+        <h2 id="jobs-sources" className="font-heading font-semibold text-xl text-foreground mb-3">
+          Sources
+        </h2>
+        <ol className="font-sans text-sm text-muted-foreground space-y-2 list-decimal list-inside">
+          <li>Autor, D. *Why Are There Still So Many Jobs? The History and Future of Workplace Automation.* Journal of Economic Perspectives, 2015. <a href="https://www.aeaweb.org/articles?id=10.1257/jep.29.3.3" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.aeaweb.org/articles?id=10.1257/jep.29.3.3</a></li>
+          <li>Brynjolfsson, E., Li, D. & Raymond, L. *Generative AI at Work.* NBER Working Paper 31161, 2023. <a href="https://www.nber.org/papers/w31161" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.nber.org/papers/w31161</a></li>
+          <li>Dastin, J. *Amazon scraps secret AI recruiting tool that showed bias against women.* Reuters, 2018. <a href="https://www.reuters.com/article/world/insight-amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK0AG/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.reuters.com/article/world/insight-amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK0AG/</a></li>
+          <li>Engler, A. *For some employment algorithms, disability discrimination by default.* Brookings Institution, 2021. <a href="https://www.brookings.edu/articles/for-some-employment-algorithms-disability-discrimination-by-default/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.brookings.edu/articles/for-some-employment-algorithms-disability-discrimination-by-default/</a></li>
+          <li>EU Artificial Intelligence Act. *Annex III: High-Risk AI Systems Referred to in Article 6(2).* 2024. <a href="https://artificialintelligenceact.eu/annex/3/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://artificialintelligenceact.eu/annex/3/</a></li>
+          <li>Möhlmann, M. & Zalmanson, L. *Hands on the wheel: Navigating algorithmic management and Uber drivers' autonomy.* ICIS, 2017. <a href="https://aisel.aisnet.org/icis2017/DigitalPlatforms/Presentations/3/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://aisel.aisnet.org/icis2017/DigitalPlatforms/Presentations/3/</a></li>
+        </ol>
+      </section>
     </TopicPageLayout>
   );
 }
