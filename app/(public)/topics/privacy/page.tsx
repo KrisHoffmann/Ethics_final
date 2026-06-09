@@ -1,4 +1,4 @@
-import { Lock } from "lucide-react";
+import { Shield } from "lucide-react";
 import { TopicPageLayout } from "@/components/topics/TopicPageLayout";
 import type { Metadata } from "next";
 
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Who actually sees your data? How AI systems collect, store, and sometimes misuse personal information.",
 };
 
-export default function PrivacyAIPage() {
+export default function PrivacyPage() {
   return (
     <TopicPageLayout
       title="Privacy & AI"
@@ -17,8 +17,8 @@ export default function PrivacyAIPage() {
       iconCls="text-violet-600"
     >
 
-      <section aria-labelledby="privacy-ai-s1">
-        <h2 id="privacy-ai-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="privacy-s1">
+        <h2 id="privacy-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
           Every prompt is a data point
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -29,8 +29,8 @@ export default function PrivacyAIPage() {
         </p>
       </section>
 
-      <section aria-labelledby="privacy-ai-s2">
-        <h2 id="privacy-ai-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="privacy-s2">
+        <h2 id="privacy-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
           Permissions and data minimisation
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -41,8 +41,8 @@ export default function PrivacyAIPage() {
         </p>
       </section>
 
-      <section aria-labelledby="privacy-ai-s3">
-        <h2 id="privacy-ai-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="privacy-s3">
+        <h2 id="privacy-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
           Automated decisions about you
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -53,8 +53,8 @@ export default function PrivacyAIPage() {
         </p>
       </section>
 
-      <section aria-labelledby="privacy-ai-s4">
-        <h2 id="privacy-ai-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="privacy-s4">
+        <h2 id="privacy-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
           The myth of "anonymous" data
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -65,8 +65,8 @@ export default function PrivacyAIPage() {
         </p>
       </section>
 
-      <section aria-labelledby="privacy-ai-s5">
-        <h2 id="privacy-ai-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="privacy-s5">
+        <h2 id="privacy-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
           Privacy-protecting techniques worth knowing
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -80,8 +80,8 @@ export default function PrivacyAIPage() {
         </p>
       </section>
 
-      <section aria-labelledby="privacy-ai-s6">
-        <h2 id="privacy-ai-s6" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="privacy-s6">
+        <h2 id="privacy-s6" className="font-heading font-semibold text-xl text-foreground mb-3">
           Dark patterns and consent
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed">
@@ -89,8 +89,8 @@ export default function PrivacyAIPage() {
         </p>
       </section>
 
-      <section aria-labelledby="privacy-ai-s7">
-        <h2 id="privacy-ai-s7" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="privacy-s7">
+        <h2 id="privacy-s7" className="font-heading font-semibold text-xl text-foreground mb-3">
           When the data is permanent
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">

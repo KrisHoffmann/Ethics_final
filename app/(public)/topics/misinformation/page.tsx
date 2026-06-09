@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
 import { TopicPageLayout } from "@/components/topics/TopicPageLayout";
 import type { Metadata } from "next";
 
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Deepfakes, hallucinated citations, and why AI makes the truth harder to verify.",
 };
 
-export default function AIMisinformationPage() {
+export default function MisinformationPage() {
   return (
     <TopicPageLayout
       title="AI & Misinformation"
@@ -17,8 +17,8 @@ export default function AIMisinformationPage() {
       iconCls="text-orange-600"
     >
 
-      <section aria-labelledby="ai-misinformation-s1">
-        <h2 id="ai-misinformation-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="misinfo-s1">
+        <h2 id="misinfo-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
           Deepfakes: seeing is no longer believing
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -29,8 +29,8 @@ export default function AIMisinformationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-misinformation-s2">
-        <h2 id="ai-misinformation-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="misinfo-s2">
+        <h2 id="misinfo-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
           The liar's dividend
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed">
@@ -38,8 +38,8 @@ export default function AIMisinformationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-misinformation-s3">
-        <h2 id="ai-misinformation-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="misinfo-s3">
+        <h2 id="misinfo-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
           Provenance: proving what is real
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed">
@@ -47,8 +47,8 @@ export default function AIMisinformationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-misinformation-s4">
-        <h2 id="ai-misinformation-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="misinfo-s4">
+        <h2 id="misinfo-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
           Hallucinated citations and confident errors
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -59,8 +59,8 @@ export default function AIMisinformationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-misinformation-s5">
-        <h2 id="ai-misinformation-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="misinfo-s5">
+        <h2 id="misinfo-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
           Why it spreads, and the simpler threat
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -71,8 +71,8 @@ export default function AIMisinformationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-misinformation-s6">
-        <h2 id="ai-misinformation-s6" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="misinfo-s6">
+        <h2 id="misinfo-s6" className="font-heading font-semibold text-xl text-foreground mb-3">
           Two habits that actually work
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">

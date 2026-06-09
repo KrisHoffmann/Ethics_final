@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 import { TopicPageLayout } from "@/components/topics/TopicPageLayout";
 import type { Metadata } from "next";
 
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Tutors, plagiarism detectors, adaptive learning, and what it means to actually understand something.",
 };
 
-export default function AIEducationPage() {
+export default function EducationPage() {
   return (
     <TopicPageLayout
       title="AI & Education"
@@ -17,8 +17,8 @@ export default function AIEducationPage() {
       iconCls="text-blue-600"
     >
 
-      <section aria-labelledby="ai-education-s1">
-        <h2 id="ai-education-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="edu-s1">
+        <h2 id="edu-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
           The hallucination problem
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -29,8 +29,8 @@ export default function AIEducationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-education-s2">
-        <h2 id="ai-education-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="edu-s2">
+        <h2 id="edu-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
           Academic honesty in the age of generative AI
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -44,8 +44,8 @@ export default function AIEducationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-education-s3">
-        <h2 id="ai-education-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="edu-s3">
+        <h2 id="edu-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
           Why AI detectors are not a verdict
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -56,8 +56,8 @@ export default function AIEducationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-education-s4">
-        <h2 id="ai-education-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="edu-s4">
+        <h2 id="edu-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
           Adaptive learning and its limits
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -71,8 +71,8 @@ export default function AIEducationPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-education-s5">
-        <h2 id="ai-education-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="edu-s5">
+        <h2 id="edu-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
           Fairness, access, and consequential decisions
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">

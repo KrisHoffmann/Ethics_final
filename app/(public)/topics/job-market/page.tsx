@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import { TopicPageLayout } from "@/components/topics/TopicPageLayout";
 import type { Metadata } from "next";
 
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Which roles are changing, which are emerging, and what it means when an algorithm decides your CV goes in the bin.",
 };
 
-export default function AITheJobMarketPage() {
+export default function JobMarketPage() {
   return (
     <TopicPageLayout
       title="AI & the Job Market"
@@ -17,8 +17,8 @@ export default function AITheJobMarketPage() {
       iconCls="text-amber-600"
     >
 
-      <section aria-labelledby="ai-the-job-market-s1">
-        <h2 id="ai-the-job-market-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="jobs-s1">
+        <h2 id="jobs-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
           Automation: tasks, not jobs
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -29,8 +29,8 @@ export default function AITheJobMarketPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-the-job-market-s2">
-        <h2 id="ai-the-job-market-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="jobs-s2">
+        <h2 id="jobs-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
           Augmentation and its flip side
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -41,8 +41,8 @@ export default function AITheJobMarketPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-the-job-market-s3">
-        <h2 id="ai-the-job-market-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="jobs-s3">
+        <h2 id="jobs-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
           Algorithmic hiring and its problems
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -56,8 +56,8 @@ export default function AITheJobMarketPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-the-job-market-s4">
-        <h2 id="ai-the-job-market-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="jobs-s4">
+        <h2 id="jobs-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
           The rules are catching up
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed">
@@ -65,8 +65,8 @@ export default function AITheJobMarketPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-the-job-market-s5">
-        <h2 id="ai-the-job-market-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="jobs-s5">
+        <h2 id="jobs-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
           Algorithmic management and new roles
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">

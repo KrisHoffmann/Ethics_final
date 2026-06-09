@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "AI does not invent prejudice, it learns it from us. And then applies it at scale.",
 };
 
-export default function AIBiasPage() {
+export default function BiasPage() {
   return (
     <TopicPageLayout
       title="AI Bias"
@@ -17,8 +17,8 @@ export default function AIBiasPage() {
       iconCls="text-rose-600"
     >
 
-      <section aria-labelledby="ai-bias-s1">
-        <h2 id="ai-bias-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="bias-s1">
+        <h2 id="bias-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
           Where bias comes from
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -32,8 +32,8 @@ export default function AIBiasPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-bias-s2">
-        <h2 id="ai-bias-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="bias-s2">
+        <h2 id="bias-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
           Bias does not just reflect, it amplifies
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed">
@@ -41,8 +41,8 @@ export default function AIBiasPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-bias-s3">
-        <h2 id="ai-bias-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="bias-s3">
+        <h2 id="bias-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
           Proxy discrimination
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -56,8 +56,8 @@ export default function AIBiasPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-bias-s4">
-        <h2 id="ai-bias-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="bias-s4">
+        <h2 id="bias-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
           Feedback loops
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed">
@@ -65,8 +65,8 @@ export default function AIBiasPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-bias-s5">
-        <h2 id="ai-bias-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="bias-s5">
+        <h2 id="bias-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
           Reducing bias is ongoing work
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -77,8 +77,8 @@ export default function AIBiasPage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-bias-s6">
-        <h2 id="ai-bias-s6" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="bias-s6">
+        <h2 id="bias-s6" className="font-heading font-semibold text-xl text-foreground mb-3">
           Accountability and what you can do
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">

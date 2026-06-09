@@ -1,4 +1,4 @@
-import { BookOpen } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import { TopicPageLayout } from "@/components/topics/TopicPageLayout";
 import type { Metadata } from "next";
 
@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Recommendations, navigation, smart speakers. AI is already shaping your day, often invisibly.",
 };
 
-export default function AIInDailyLifePage() {
+export default function EverydayLifePage() {
   return (
     <TopicPageLayout
       title="AI in Daily Life"
@@ -17,8 +17,8 @@ export default function AIInDailyLifePage() {
       iconCls="text-emerald-600"
     >
 
-      <section aria-labelledby="ai-in-daily-life-s1">
-        <h2 id="ai-in-daily-life-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="daily-s1">
+        <h2 id="daily-s1" className="font-heading font-semibold text-xl text-foreground mb-3">
           Filter bubbles and recommendation engines
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -29,8 +29,8 @@ export default function AIInDailyLifePage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-in-daily-life-s2">
-        <h2 id="ai-in-daily-life-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="daily-s2">
+        <h2 id="daily-s2" className="font-heading font-semibold text-xl text-foreground mb-3">
           Persuasive design and your attention
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed">
@@ -38,8 +38,8 @@ export default function AIInDailyLifePage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-in-daily-life-s3">
-        <h2 id="ai-in-daily-life-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="daily-s3">
+        <h2 id="daily-s3" className="font-heading font-semibold text-xl text-foreground mb-3">
           When individual optimisation becomes a collective problem
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -50,8 +50,8 @@ export default function AIInDailyLifePage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-in-daily-life-s4">
-        <h2 id="ai-in-daily-life-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="daily-s4">
+        <h2 id="daily-s4" className="font-heading font-semibold text-xl text-foreground mb-3">
           Always-on devices and ambient data collection
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
@@ -62,8 +62,8 @@ export default function AIInDailyLifePage() {
         </p>
       </section>
 
-      <section aria-labelledby="ai-in-daily-life-s5">
-        <h2 id="ai-in-daily-life-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
+      <section aria-labelledby="daily-s5">
+        <h2 id="daily-s5" className="font-heading font-semibold text-xl text-foreground mb-3">
           When AI gets it confidently wrong
         </h2>
         <p className="font-sans text-base text-foreground leading-relaxed mb-3">
