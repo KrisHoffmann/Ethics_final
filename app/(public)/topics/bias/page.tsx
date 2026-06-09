@@ -91,6 +91,21 @@ export default function BiasPage() {
           Ready to test what you know?
         </p>
       </section>
+
+      <section aria-labelledby="bias-sources" className="mt-8 pt-6 border-t border-border">
+        <h2 id="bias-sources" className="font-heading font-semibold text-xl text-foreground mb-3">
+          Sources
+        </h2>
+        <ol className="font-sans text-sm text-muted-foreground space-y-2 list-decimal list-inside">
+          <li>Suresh, H. & Guttag, J. *A Framework for Understanding Sources of Harm throughout the Machine Learning Life Cycle.* ACM EAAMO, 2021. <a href="https://dl.acm.org/doi/10.1145/3465416.3483305" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://dl.acm.org/doi/10.1145/3465416.3483305</a></li>
+          <li>Buolamwini, J. & Gebru, T. *Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification.* Proceedings of Machine Learning Research, 2018. <a href="https://proceedings.mlr.press/v81/buolamwini18a.html" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://proceedings.mlr.press/v81/buolamwini18a.html</a></li>
+          <li>Zhao, J. et al. *Men Also Like Shopping: Reducing Gender Bias Amplification using Corpus-level Constraints.* EMNLP, 2017. <a href="https://aclanthology.org/D17-1323/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://aclanthology.org/D17-1323/</a></li>
+          <li>Obermeyer, Z. et al. *Dissecting racial bias in an algorithm used to manage the health of populations.* Science, 2019. <a href="https://www.science.org/doi/10.1126/science.aax2342" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://www.science.org/doi/10.1126/science.aax2342</a></li>
+          <li>Ensign, D. et al. *Runaway Feedback Loops in Predictive Policing.* Proceedings of Machine Learning Research, 2018. <a href="https://proceedings.mlr.press/v81/ensign18a.html" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://proceedings.mlr.press/v81/ensign18a.html</a></li>
+          <li>Kleinberg, J., Mullainathan, S. & Raghavan, M. *Inherent Trade-Offs in the Fair Determination of Risk Scores.* ITCS, 2017. <a href="https://arxiv.org/abs/1609.05807" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/1609.05807</a></li>
+          <li>EU Artificial Intelligence Act. *Annex III: High-Risk AI Systems Referred to in Article 6(2).* 2024. <a href="https://artificialintelligenceact.eu/annex/3/" className="underline hover:opacity-70 break-all" target="_blank" rel="noopener noreferrer">https://artificialintelligenceact.eu/annex/3/</a></li>
+        </ol>
+      </section>
     </TopicPageLayout>
   );
 }
