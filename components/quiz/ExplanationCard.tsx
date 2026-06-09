@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CheckCircle2, XCircle, ChevronRight } from "lucide-react";
+import { CheckCircle2, XCircle, ChevronRight, Share2 } from "lucide-react";
 import type { AnswerState } from "@/lib/quiz/types";
 
 const topicHref: Record<string, string> = {
@@ -38,6 +38,43 @@ export function ExplanationCard({
   finalStreak,
 }: ExplanationCardProps) {
   const isCorrect = state === "correct";
+
+  // Change this to your deployed URL.
+  const shareUrl = typeof window !== "undefined" ? window.location.origin : "";
+  const shareText = `I hit a streak of ${finalStreak} on the AI Literacy Quiz! Can you beat it?`;
+
+  const encodedText = encodeURIComponent(shareText);
+  const encodedUrl = encodeURIComponent(shareUrl);
+
+  const shareLinks = {
+    whatsapp: `https://wa.me/?text=${encodeURIComponent(`${shareText} ${shareUrl}`)}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&quote=${encodedText}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+  };
+
+  const openShare = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  // Instagram has no web share URL, so use the native share sheet
+  // (works on mobile; user can then pick Instagram).
+  const shareInstagram = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "AI Literacy Quiz", text: shareText, url: shareUrl });
+      } catch {
+        /* user cancelled */
+      }
+    } else {
+      // Desktop fallback: copy the message so they can paste it into Instagram.
+      try {
+        await navigator.clipboard.writeText(`${shareText} ${shareUrl}`);
+        alert("Link copied! Open Instagram and paste it into your story or DM.");
+      } catch {
+        alert("Couldn't copy automatically. Share this: " + `${shareText} ${shareUrl}`);
+      }
+    }
+  };
 
   return (
     <div
@@ -82,20 +119,73 @@ export function ExplanationCard({
         </div>
       )}
 
-      {/* Next / Play again button */}
-      <button
-        onClick={onNext}
-        className="self-start inline-flex items-center gap-2 px-5 py-2.5 rounded-xl
-                   font-heading font-semibold text-sm text-primary-foreground bg-primary
-                   border-[3px] border-primary/80 min-h-[44px]
-                   shadow-[4px_4px_8px_rgba(0,0,0,0.10)]
-                   hover:shadow-[6px_6px_12px_rgba(0,0,0,0.13)]
-                   active:scale-95 transition-all duration-200 cursor-pointer
-                   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-      >
-        {roundOver ? "Play again" : "Next question"}
-        <ChevronRight size={16} aria-hidden="true" />
-      </button>
+      {/* Action row: Play again + Share */}
+      <div className="flex flex-wrap items-center gap-3">
+        {/* Next / Play again button */}
+        <button
+          onClick={onNext}
+          className="self-start inline-flex items-center gap-2 px-5 py-2.5 rounded-xl
+                     font-heading font-semibold text-sm text-primary-foreground bg-primary
+                     border-[3px] border-primary/80 min-h-[44px]
+                     shadow-[4px_4px_8px_rgba(0,0,0,0.10)]
+                     hover:shadow-[6px_6px_12px_rgba(0,0,0,0.13)]
+                     active:scale-95 transition-all duration-200 cursor-pointer
+                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+        >
+          {roundOver ? "Play again" : "Next question"}
+          <ChevronRight size={16} aria-hidden="true" />
+        </button>
+
+        {/* Share buttons — only after the streak ends */}
+        {roundOver && (
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center gap-1 font-sans text-sm font-semibold text-muted-foreground">
+              <Share2 size={16} aria-hidden="true" />
+              Share:
+            </span>
+
+            <button
+              onClick={() => openShare(shareLinks.whatsapp)}
+              aria-label="Share on WhatsApp"
+              className="px-3 py-2 rounded-lg font-sans text-sm font-semibold border-[2px] border-border
+                         min-h-[44px] hover:bg-background active:scale-95 transition-all duration-200 cursor-pointer
+                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+            >
+              WhatsApp
+            </button>
+
+            <button
+              onClick={() => openShare(shareLinks.facebook)}
+              aria-label="Share on Facebook"
+              className="px-3 py-2 rounded-lg font-sans text-sm font-semibold border-[2px] border-border
+                         min-h-[44px] hover:bg-background active:scale-95 transition-all duration-200 cursor-pointer
+                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+            >
+              Facebook
+            </button>
+
+            <button
+              onClick={() => openShare(shareLinks.linkedin)}
+              aria-label="Share on LinkedIn"
+              className="px-3 py-2 rounded-lg font-sans text-sm font-semibold border-[2px] border-border
+                         min-h-[44px] hover:bg-background active:scale-95 transition-all duration-200 cursor-pointer
+                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+            >
+              LinkedIn
+            </button>
+
+            <button
+              onClick={shareInstagram}
+              aria-label="Share on Instagram"
+              className="px-3 py-2 rounded-lg font-sans text-sm font-semibold border-[2px] border-border
+                         min-h-[44px] hover:bg-background active:scale-95 transition-all duration-200 cursor-pointer
+                         focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1"
+            >
+              Instagram
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
